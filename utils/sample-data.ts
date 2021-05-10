@@ -1,9 +1,21 @@
-import { User } from '../interfaces'
+import { Skill } from '../interfaces'
 
-/** Dummy user data. */
-export const sampleUserData: User[] = [
-  { id: 101, name: 'Alice' },
-  { id: 102, name: 'Bob' },
-  { id: 103, name: 'Caroline' },
-  { id: 104, name: 'Dave' },
+export const SkillData: Skill[] = [
+  {
+    name: 'JavaScript' , year: 3, desc:'foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.' ,
+    image:'/assets/img/js.jpg'
+  },
+  {
+    name: 'TypeScript' , year: 2, desc:'foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.' ,
+    image:'/assets/img/ts.jpg'
+  },
+  {
+    name: 'React' , year: 1, desc:'foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.' ,
+    image:'/assets/img/react.jpg'
+  },
+  {
+    name: 'Vue' , year: 1.5, desc:'foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.' ,
+    image:'/assets/img/vue.jpg'
+  },
+
 ]
