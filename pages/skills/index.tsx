@@ -21,9 +21,9 @@ const WithStaticProps = () => {
                 spacing={4}
                 className={classes.gridContainer}
             >
-                {SkillData.map((skill) => (
+                {SkillData.map((skill,i) => (
                     <Grid item xs={12} sm={6} md={4}>
-                        <CardItem skill={skill}/>
+                        <CardItem skill={skill} key={i}/>
                     </Grid>
                 ))}
             </Grid>

@@ -18,13 +18,15 @@ const useStyles = makeStyles({
         maxWidth: 345,
     },
     media: {
-        height: 140,
-    },
+        height: 160,
+        width: '100%',
+        display: "block",
+        margin: "0",
+    }
 });
 
 const CardItem = ({skill}:Props) => {
     const classes = useStyles();
-
     return (
         <div>
             <Card className={classes.root} >
