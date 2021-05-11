@@ -14,9 +14,7 @@ const IndexPage = () => {
                 alignItems="center"
                 style={{ minHeight: '90vh' }}
             >
-                <h1>
-                    <TypeWriter title={'Kiichi Hamanaka'}/>
-                </h1>
+                <TypeWriter title={'Kiichi Hamanaka'}/>
             </Grid>
         </Layout>
 

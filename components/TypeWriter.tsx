@@ -9,11 +9,14 @@ type Props = {
 
 const TypeWriter = (props:Props) => {
     return (
-                <TW
-                    cursor
-                    typeSpeed={70}
-                    words={[props.title]}
-                />
+        <h1>
+            <TW
+                cursor
+                typeSpeed={70}
+                words={[props.title]}
+            />
+        </h1>
+
     )
 }
 export default TypeWriter
