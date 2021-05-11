@@ -21,11 +21,11 @@ const AboutPage = () => {
                 <Grid  container spacing={3}>
                     <Grid item xs={6}>
                         <Image
-                            src='/img/Ishikawa.png'
+                            src='/img/ishikawa.png'
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                        ></Image>
+                        />
                     </Grid>
                     <Grid item xs={6}>
                         <h2>濵中貴一</h2>
