@@ -17,5 +17,5 @@ export const SkillData: Skill[] = [
     name: 'Vue' , year: 1.5, desc:'foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.foobar this is very long text.' ,
     image:'img/vue.svg'
   },
-
 ]
+

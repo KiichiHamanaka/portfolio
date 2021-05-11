@@ -10,7 +10,10 @@ type Props = {
 
 const useStyles = makeStyles({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
+    },
+    appBar: {
+        margin: 0
     }
 });
 
@@ -20,11 +23,11 @@ const NavBar = (props:Props) => {
 
     return (
         <div className={classes.root}>
-            <AppBar position="fixed">
+            <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
-                    <h2>
+                    <h3>
                         <Link href="/">{props.title}</Link>
-                    </h2>
+                    </h3>
                     <div style={{ flexGrow: 1 }}>
                     </div>
                     <IconButton

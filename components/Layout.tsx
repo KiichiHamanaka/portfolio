@@ -1,7 +1,7 @@
 import React, {createContext, Dispatch, ReactNode, SetStateAction, useState} from 'react'
 import Head from 'next/head'
 import NavBar from "./NavBar";
-import {Drawer, makeStyles} from "@material-ui/core";
+import {Box, Drawer} from "@material-ui/core";
 import DrawerContents from "./DrawerContents";
 
 type Props = {
@@ -15,16 +15,12 @@ export const DrawerContext = createContext<{
     setDrawer: () => {},
 })
 
-const useStyles = makeStyles({
-    footer: {
-        position: 'fixed',
-        bottom: 0,
-        align: 'center',
-    }
-});
+// const useStyles = makeStyles({
+//
+// });
 
 const Layout = ({children, title}: Props) => {
-    const classes = useStyles();
+    //const classes = useStyles();
     const [isDrawer, setDrawer] = useState(false)
     return (
         <DrawerContext.Provider value={{ setDrawer }}>
@@ -36,9 +32,12 @@ const Layout = ({children, title}: Props) => {
             <header>
                 <NavBar title={"K.Hamanaka"}/>
             </header>
-            {children}
+            <main>
+                <Box paddingTop={6}>
+                    {children}
+                </Box>
+            </main>
             <footer>
-                <p className={classes.footer}>Copyright KiichiHamanaka ©{new Date().getFullYear()}.</p>
             </footer>
             <Drawer
                 anchor="right"

@@ -11,24 +11,24 @@ const useStyles = makeStyles({
     }
 });
 
-const WithStaticProps = () => {
+const SkillPage = () => {
     const classes = useStyles();
     return (
         <Layout title="Skills">
-            <h1>Skills</h1>
-            <Grid
-                container
-                spacing={4}
-                className={classes.gridContainer}
-            >
-                {SkillData.map((skill,i) => (
-                    <Grid item xs={12} sm={6} md={4}>
-                        <CardItem skill={skill} key={i}/>
-                    </Grid>
-                ))}
-            </Grid>
+                <h1>Skills</h1>
+                <Grid
+                    container
+                    spacing={4}
+                    className={classes.gridContainer}
+                >
+                    {SkillData.map((skill,i) => (
+                        <Grid item xs={12} sm={6} md={4}>
+                            <CardItem skill={skill} key={i}/>
+                        </Grid>
+                    ))}
+                </Grid>
         </Layout>
     )
 }
 
-export default WithStaticProps
+export default SkillPage
